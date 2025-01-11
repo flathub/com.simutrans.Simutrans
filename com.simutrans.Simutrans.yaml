@@ -1,6 +1,6 @@
 app-id: com.simutrans.Simutrans
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: simutrans
 rename-desktop-file: simutrans.desktop
@@ -34,12 +34,12 @@ modules:
     buildsystem: cmake-ninja
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
-      - -DSIMUTRANS_USE_REVISION=11272
+      - -DSIMUTRANS_USE_REVISION=11590
     builddir: true
     sources:
       - type: svn
         url: svn://servers.simutrans.org/simutrans/trunk
-        revision: '11276'
+        revision: '11591'
 
   - name: musescore-general-soundfont
     buildsystem: simple
