@@ -34,12 +34,12 @@ modules:
     buildsystem: cmake-ninja
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
-      - -DSIMUTRANS_USE_REVISION=11590
+      - -DSIMUTRANS_USE_REVISION=11671
     builddir: true
     sources:
       - type: svn
         url: svn://servers.simutrans.org/simutrans/trunk
-        revision: '11591'
+        revision: '11671'
 
   - name: musescore-general-soundfont
     buildsystem: simple
