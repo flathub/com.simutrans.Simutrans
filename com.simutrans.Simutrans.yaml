@@ -1,6 +1,6 @@
 app-id: com.simutrans.Simutrans
 runtime: org.freedesktop.Platform
-runtime-version: '25.08'
+runtime-version: '26.08'
 sdk: org.freedesktop.Sdk
 command: simutrans
 rename-desktop-file: simutrans.desktop
@@ -27,19 +27,19 @@ modules:
         - /share/doc
     sources:
       - type: archive
-        url: https://miniupnp.tuxfamily.org/files/miniupnpc-2.2.7.tar.gz
-        sha256: b0c3a27056840fd0ec9328a5a9bac3dc5e0ec6d2e8733349cf577b0aa1e70ac1
+        url: https://miniupnp.tuxfamily.org/files/miniupnpc-2.3.3.tar.gz
+        sha256: d52a0afa614ad6c088cc9ddff1ae7d29c8c595ac5fdd321170a05f41e634bd1a
 
   - name: simutrans
     buildsystem: cmake-ninja
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
-      - -DSIMUTRANS_USE_REVISION=11993
+      - -DSIMUTRANS_USE_REVISION=12321
     builddir: true
     sources:
       - type: svn
         url: svn://servers.simutrans.org/simutrans/trunk
-        revision: '11993'
+        revision: '12321'
 
   - name: musescore-general-soundfont
     buildsystem: simple
